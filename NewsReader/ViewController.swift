@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // ニュース情報の取得先
+        let requestUrl = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&topic=p&hl=ja&rsz=8"
+        
+        // web サーバーに対して HTTP 通信のリクエストを出してデータを取得
+        Alamofire.request(.GET, requestUrl).responseJSON {
+            (request, response, json, error) in
+            println(json)
+        }
+        
+        // ニュース記事データをテーブルビューに表示
     }
 
     override func didReceiveMemoryWarning() {

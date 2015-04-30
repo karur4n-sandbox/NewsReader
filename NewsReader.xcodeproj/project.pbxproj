@@ -13,6 +13,7 @@
 		2A2889241AF1E56300DCA701 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2889231AF1E56300DCA701 /* Images.xcassets */; };
 		2A2889271AF1E56300DCA701 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2889251AF1E56300DCA701 /* LaunchScreen.xib */; };
 		2A2889331AF1E56300DCA701 /* NewsReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2889321AF1E56300DCA701 /* NewsReaderTests.swift */; };
+		8940B3432FF1A39F35DD6393 /* Pods_NewsReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754C5DC8E967F00E8E6AED49 /* Pods_NewsReader.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		2A28892C1AF1E56300DCA701 /* NewsReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2889311AF1E56300DCA701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2889321AF1E56300DCA701 /* NewsReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderTests.swift; sourceTree = "<group>"; };
+		754C5DC8E967F00E8E6AED49 /* Pods_NewsReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB53AB968BFD82E29256106D /* Pods-NewsReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsReader/Pods-NewsReader.release.xcconfig"; sourceTree = "<group>"; };
+		E8D6731B45E2C4EC3D9CE911 /* Pods-NewsReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsReader/Pods-NewsReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8940B3432FF1A39F35DD6393 /* Pods_NewsReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3749B940452B2DCF8B09A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				754C5DC8E967F00E8E6AED49 /* Pods_NewsReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A28890E1AF1E56300DCA701 = {
 			isa = PBXGroup;
 			children = (
 				2A2889191AF1E56300DCA701 /* NewsReader */,
 				2A28892F1AF1E56300DCA701 /* NewsReaderTests */,
 				2A2889181AF1E56300DCA701 /* Products */,
+				A1AE627FD4D2F0AB64907066 /* Pods */,
+				0E3749B940452B2DCF8B09A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +127,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A1AE627FD4D2F0AB64907066 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8D6731B45E2C4EC3D9CE911 /* Pods-NewsReader.debug.xcconfig */,
+				CB53AB968BFD82E29256106D /* Pods-NewsReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A2889361AF1E56300DCA701 /* Build configuration list for PBXNativeTarget "NewsReader" */;
 			buildPhases = (
+				D4527C150B1E85FD56EEEC29 /* Check Pods Manifest.lock */,
 				2A2889131AF1E56300DCA701 /* Sources */,
 				2A2889141AF1E56300DCA701 /* Frameworks */,
 				2A2889151AF1E56300DCA701 /* Resources */,
+				6672B390F5D39F11DC5D9AF5 /* Embed Pods Frameworks */,
+				38CFB1DEC7C0BBEE748EBE99 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38CFB1DEC7C0BBEE748EBE99 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsReader/Pods-NewsReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6672B390F5D39F11DC5D9AF5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsReader/Pods-NewsReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4527C150B1E85FD56EEEC29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A2889131AF1E56300DCA701 /* Sources */ = {
@@ -338,6 +413,7 @@
 		};
 		2A2889371AF1E56300DCA701 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D6731B45E2C4EC3D9CE911 /* Pods-NewsReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewsReader/Info.plist;
@@ -348,6 +424,7 @@
 		};
 		2A2889381AF1E56300DCA701 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB53AB968BFD82E29256106D /* Pods-NewsReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewsReader/Info.plist;
@@ -409,6 +486,7 @@
 				2A2889381AF1E56300DCA701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A2889391AF1E56300DCA701 /* Build configuration list for PBXNativeTarget "NewsReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +495,7 @@
 				2A28893B1AF1E56300DCA701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
