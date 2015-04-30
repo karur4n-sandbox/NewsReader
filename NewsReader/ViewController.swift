@@ -16,9 +16,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var table :UITableView!
     
     var newsUrl = ""
+    var publisher = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "NewsReader"
         
         table.dataSource = self
         table.delegate = self
@@ -67,6 +70,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var newsDic = newsDataArray[indexPath.row] as! NSDictionary
 
         newsUrl = newsDic["unescapedUrl"] as! String
+        publisher = newsDic["publisher"] as! String
         
         performSegueWithIdentifier("toWebView", sender: self)
     }
@@ -79,6 +83,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var wvc = segue.destinationViewController as! WebViewController
         wvc.newsUrl = newsUrl
+        wvc.title = publisher
     }
 }
 
