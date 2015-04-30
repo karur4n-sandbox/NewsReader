@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nEE-kR-ppF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -42,13 +42,99 @@
                             <constraint firstItem="LMX-gQ-OgK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="w0n-Lb-0sz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dq9-R2-cWb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="table" destination="LMX-gQ-OgK" id="0OX-ot-ZRa"/>
+                        <segue destination="4bU-xo-Gs5" kind="show" identifier="toWebView" id="x9w-HI-Lwk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1252" y="462"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="nkQ-0q-OKL">
+            <objects>
+                <viewController id="4bU-xo-Gs5" customClass="WebViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D7n-Rs-MCw"/>
+                        <viewControllerLayoutGuide type="bottom" id="bXD-62-1Vl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FkT-U6-Gdm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHQ-q2-SW0">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="戻る" id="aOg-ts-Wd0">
+                                        <connections>
+                                            <action selector="goBack" destination="2yJ-OJ-JbL" id="G9I-Yc-HiD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Xyo-WY-fGI"/>
+                                    <barButtonItem title="進む" id="k8q-Bx-tMB">
+                                        <connections>
+                                            <action selector="goForward" destination="2yJ-OJ-JbL" id="3ie-x0-x8N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nJI-wE-fF5"/>
+                                    <barButtonItem systemItem="refresh" id="UUg-uh-nBu">
+                                        <connections>
+                                            <action selector="reload" destination="2yJ-OJ-JbL" id="kC1-V3-OKb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nqD-V2-nxM"/>
+                                    <barButtonItem systemItem="stop" id="haZ-fC-ZtR">
+                                        <connections>
+                                            <action selector="stopLoading" destination="2yJ-OJ-JbL" id="gdn-uw-8Cl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yJ-OJ-JbL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qHQ-q2-SW0" firstAttribute="top" secondItem="2yJ-OJ-JbL" secondAttribute="bottom" id="5EV-Y0-Sfk"/>
+                            <constraint firstItem="bXD-62-1Vl" firstAttribute="top" secondItem="qHQ-q2-SW0" secondAttribute="bottom" id="Bm6-qD-Ojs"/>
+                            <constraint firstItem="2yJ-OJ-JbL" firstAttribute="top" secondItem="FkT-U6-Gdm" secondAttribute="topMargin" id="CM3-0z-MJ4"/>
+                            <constraint firstItem="2yJ-OJ-JbL" firstAttribute="leading" secondItem="FkT-U6-Gdm" secondAttribute="leadingMargin" constant="-16" id="IsY-MH-5Ri"/>
+                            <constraint firstItem="qHQ-q2-SW0" firstAttribute="leading" secondItem="FkT-U6-Gdm" secondAttribute="leadingMargin" constant="-16" id="YI9-il-mH5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qHQ-q2-SW0" secondAttribute="trailing" constant="-16" id="rkY-Cz-mrL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2yJ-OJ-JbL" secondAttribute="trailing" constant="-16" id="xPo-7e-21J"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webview" destination="2yJ-OJ-JbL" id="j3q-MP-qvY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbC-hc-9GH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="396"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lXu-GW-17w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nEE-kR-ppF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5rc-VX-W47">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="3DN-Yp-lvV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YL7-ci-eMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="-281"/>
         </scene>
     </scenes>
 </document>

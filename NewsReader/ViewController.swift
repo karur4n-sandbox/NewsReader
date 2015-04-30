@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet var table :UITableView!
     
+    var newsUrl = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,21 +65,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         println("タップされたセルのインデックスパス:\(indexPath.row)")
         // ニュース記事データを取得
         var newsDic = newsDataArray[indexPath.row] as! NSDictionary
-        // ニュース記事の URL を取得
-        let newsUrl = newsDic["unescapedUrl"] as! String
-        // String を NSURL に変換
-        let url = NSURL(string: newsUrl)
-        // UIApplication インスタンスを作成
-        let app = UIApplication.sharedApplication()
-        // openURL メソッドで URL を引数に WEB ブラウザ Safari を起動
-        app.openURL(url!)
+
+        newsUrl = newsDic["unescapedUrl"] as! String
+        
+        performSegueWithIdentifier("toWebView", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var wvc = segue.destinationViewController as! WebViewController
+        wvc.newsUrl = newsUrl
+    }
 }
 
