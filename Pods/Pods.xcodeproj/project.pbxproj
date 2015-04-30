@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30EDEEBC580BB3FC34909365 /* Pods-NewsReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C4D89770204BC2EF67138C /* Pods-NewsReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C0C5821169FF06B1CFDE28D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438CC5E663FCAD1B90D0F3E /* Foundation.framework */; };
+		7170ED73CB36FA0C724CEC28 /* Pods-NewsReader-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 185FCADC4D1889FB52FD944C /* Pods-NewsReader-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3BACAC05DB93BA8CA74E711 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83974EE4834DBD7AE5DF0749 /* Alamofire.swift */; };
+		DB1A7AAF7268825287E17C50 /* Pods-NewsReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BA6B07CDBFA6DA1520C4CA /* Pods-NewsReader-dummy.m */; };
+		E2DEB42A86E70437C83D8A0F /* Pods-NewsReader-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B120D729ACCD5C76B46846 /* Pods-NewsReader-Alamofire-dummy.m */; };
+		E65C5B76A658B05EF3ED264C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438CC5E663FCAD1B90D0F3E /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0FA720CD648963C9A249608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9C4E0CCEAB7D3038F38EC19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1DDEFAAE456D9CBA62EFE1B;
+			remoteInfo = "Pods-NewsReader-Alamofire";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033F68FE3B13DB09A44B5C30 /* Pods-NewsReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NewsReader.modulemap"; sourceTree = "<group>"; };
+		103CA842C303DB51655BD2FC /* Pods-NewsReader-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewsReader-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		1438CC5E663FCAD1B90D0F3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		185FCADC4D1889FB52FD944C /* Pods-NewsReader-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewsReader-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		189FBCA7917CFE50D7AFB158 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D21CDDFBAEE5120FB1158F0 /* Pods-NewsReader-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewsReader-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		401A7B4539A767D3275051D6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4038204EDBFFE0C9728DC5F7 /* Pods-NewsReader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NewsReader-acknowledgements.plist"; sourceTree = "<group>"; };
+		44B120D729ACCD5C76B46846 /* Pods-NewsReader-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NewsReader-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		5400053696EB314AE2AE6382 /* Pods-NewsReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewsReader.release.xcconfig"; sourceTree = "<group>"; };
+		5FB6DC63C36D955BA4AB7F9E /* Pods-NewsReader-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewsReader-environment.h"; sourceTree = "<group>"; };
+		646FC43155EFBFA6B0591C86 /* Pods_NewsReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BA6B07CDBFA6DA1520C4CA /* Pods-NewsReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NewsReader-dummy.m"; sourceTree = "<group>"; };
+		6AE380124809CE7142200005 /* Pods-NewsReader-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewsReader-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		72C4D89770204BC2EF67138C /* Pods-NewsReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewsReader-umbrella.h"; sourceTree = "<group>"; };
+		7A7127DC40259F6B4A3539BC /* Pods-NewsReader-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewsReader-resources.sh"; sourceTree = "<group>"; };
+		7AE63794829BCF971BC0A6C5 /* Pods-NewsReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewsReader.debug.xcconfig"; sourceTree = "<group>"; };
+		83974EE4834DBD7AE5DF0749 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A171A4AE23ECBCC11E0B85A7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C9B5D396B65BA86EFBBC6A /* Pods-NewsReader-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NewsReader-Alamofire.modulemap"; sourceTree = "<group>"; };
+		C2F4A30EFF9D2BC5C9D554BA /* Pods-NewsReader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewsReader-frameworks.sh"; sourceTree = "<group>"; };
+		C4A939F3719FC44F53E86CEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A98426D02A88A98C70BE09 /* Pods-NewsReader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NewsReader-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013D8808795D34F759727FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0C5821169FF06B1CFDE28D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB426E8DE1156A762B134F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65C5B76A658B05EF3ED264C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		413FB0F55CBF2F7005B030BB = {
+			isa = PBXGroup;
+			children = (
+				401A7B4539A767D3275051D6 /* Podfile */,
+				BF1EF14DFA3419ABD8FB38E4 /* Frameworks */,
+				B9F93D914886638EABDF23BF /* Pods */,
+				61ED29C6A0DEF1FC5B427827 /* Products */,
+				96048EB568562754601D19F0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		5C13DDFC031DBE5A931CEBC5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1438CC5E663FCAD1B90D0F3E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61ED29C6A0DEF1FC5B427827 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A171A4AE23ECBCC11E0B85A7 /* Alamofire.framework */,
+				646FC43155EFBFA6B0591C86 /* Pods_NewsReader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96048EB568562754601D19F0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E9D50E2AF679864DE4488 /* Pods-NewsReader */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA7E9D50E2AF679864DE4488 /* Pods-NewsReader */ = {
+			isa = PBXGroup;
+			children = (
+				189FBCA7917CFE50D7AFB158 /* Info.plist */,
+				033F68FE3B13DB09A44B5C30 /* Pods-NewsReader.modulemap */,
+				D7A98426D02A88A98C70BE09 /* Pods-NewsReader-acknowledgements.markdown */,
+				4038204EDBFFE0C9728DC5F7 /* Pods-NewsReader-acknowledgements.plist */,
+				65BA6B07CDBFA6DA1520C4CA /* Pods-NewsReader-dummy.m */,
+				5FB6DC63C36D955BA4AB7F9E /* Pods-NewsReader-environment.h */,
+				C2F4A30EFF9D2BC5C9D554BA /* Pods-NewsReader-frameworks.sh */,
+				7A7127DC40259F6B4A3539BC /* Pods-NewsReader-resources.sh */,
+				72C4D89770204BC2EF67138C /* Pods-NewsReader-umbrella.h */,
+				7AE63794829BCF971BC0A6C5 /* Pods-NewsReader.debug.xcconfig */,
+				5400053696EB314AE2AE6382 /* Pods-NewsReader.release.xcconfig */,
+			);
+			name = "Pods-NewsReader";
+			path = "Target Support Files/Pods-NewsReader";
+			sourceTree = "<group>";
+		};
+		AF1F55572BAD65FA5CC7BC8C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4A939F3719FC44F53E86CEC /* Info.plist */,
+				B9C9B5D396B65BA86EFBBC6A /* Pods-NewsReader-Alamofire.modulemap */,
+				6AE380124809CE7142200005 /* Pods-NewsReader-Alamofire.xcconfig */,
+				103CA842C303DB51655BD2FC /* Pods-NewsReader-Alamofire-Private.xcconfig */,
+				44B120D729ACCD5C76B46846 /* Pods-NewsReader-Alamofire-dummy.m */,
+				2D21CDDFBAEE5120FB1158F0 /* Pods-NewsReader-Alamofire-prefix.pch */,
+				185FCADC4D1889FB52FD944C /* Pods-NewsReader-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-NewsReader-Alamofire";
+			sourceTree = "<group>";
+		};
+		B9F93D914886638EABDF23BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFF814060E173DB0B5BCAF39 /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF1EF14DFA3419ABD8FB38E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C13DDFC031DBE5A931CEBC5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFF814060E173DB0B5BCAF39 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				83974EE4834DBD7AE5DF0749 /* Alamofire.swift */,
+				AF1F55572BAD65FA5CC7BC8C /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DC1F7DF0115DB28292D3EE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7170ED73CB36FA0C724CEC28 /* Pods-NewsReader-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED192584E943021B8DE558D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EDEEBC580BB3FC34909365 /* Pods-NewsReader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4751EB339BB22F4FFA5F5007 /* Pods-NewsReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71C5C0DCF890CE2BF5B6110 /* Build configuration list for PBXNativeTarget "Pods-NewsReader" */;
+			buildPhases = (
+				7A1641FF76A2D6897D4EDB8D /* Sources */,
+				013D8808795D34F759727FDE /* Frameworks */,
+				CED192584E943021B8DE558D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3126C77FF0E248B69453EF3 /* PBXTargetDependency */,
+			);
+			name = "Pods-NewsReader";
+			productName = "Pods-NewsReader";
+			productReference = 646FC43155EFBFA6B0591C86 /* Pods_NewsReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1DDEFAAE456D9CBA62EFE1B /* Pods-NewsReader-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F0F5F460902EAEB8323A47 /* Build configuration list for PBXNativeTarget "Pods-NewsReader-Alamofire" */;
+			buildPhases = (
+				F85BA501796816689537F750 /* Sources */,
+				61FB426E8DE1156A762B134F /* Frameworks */,
+				3DC1F7DF0115DB28292D3EE0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NewsReader-Alamofire";
+			productName = "Pods-NewsReader-Alamofire";
+			productReference = A171A4AE23ECBCC11E0B85A7 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9C4E0CCEAB7D3038F38EC19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C3A509A2FF78CA01589265E9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 413FB0F55CBF2F7005B030BB;
+			productRefGroup = 61ED29C6A0DEF1FC5B427827 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4751EB339BB22F4FFA5F5007 /* Pods-NewsReader */,
+				D1DDEFAAE456D9CBA62EFE1B /* Pods-NewsReader-Alamofire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1641FF76A2D6897D4EDB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1A7AAF7268825287E17C50 /* Pods-NewsReader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85BA501796816689537F750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3BACAC05DB93BA8CA74E711 /* Alamofire.swift in Sources */,
+				E2DEB42A86E70437C83D8A0F /* Pods-NewsReader-Alamofire-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3126C77FF0E248B69453EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NewsReader-Alamofire";
+			target = D1DDEFAAE456D9CBA62EFE1B /* Pods-NewsReader-Alamofire */;
+			targetProxy = B0FA720CD648963C9A249608 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		004DB4B49C1974126EAD8A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		25A05E7041376D402F76EDE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103CA842C303DB51655BD2FC /* Pods-NewsReader-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NewsReader-Alamofire/Pods-NewsReader-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NewsReader-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NewsReader-Alamofire/Pods-NewsReader-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B5741BA5EF51B4043D4BB84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5400053696EB314AE2AE6382 /* Pods-NewsReader.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NewsReader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NewsReader/Pods-NewsReader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NewsReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5255E457AA52C6314AAE52A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE63794829BCF971BC0A6C5 /* Pods-NewsReader.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NewsReader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NewsReader/Pods-NewsReader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NewsReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D9260CB50B189AC58DCE3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103CA842C303DB51655BD2FC /* Pods-NewsReader-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NewsReader-Alamofire/Pods-NewsReader-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NewsReader-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NewsReader-Alamofire/Pods-NewsReader-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB5E0B178054D93D8D47A878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19F0F5F460902EAEB8323A47 /* Build configuration list for PBXNativeTarget "Pods-NewsReader-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9260CB50B189AC58DCE3B8 /* Debug */,
+				25A05E7041376D402F76EDE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71C5C0DCF890CE2BF5B6110 /* Build configuration list for PBXNativeTarget "Pods-NewsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5255E457AA52C6314AAE52A3 /* Debug */,
+				4B5741BA5EF51B4043D4BB84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A509A2FF78CA01589265E9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004DB4B49C1974126EAD8A79 /* Debug */,
+				DB5E0B178054D93D8D47A878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9C4E0CCEAB7D3038F38EC19 /* Project object */;
+}
